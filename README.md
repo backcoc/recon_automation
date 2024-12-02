@@ -20,7 +20,7 @@ Go (will be installed if not present)
 ## 📦 Tools Installed
 The script automatically installs:
 
-Sublist3r
+Subfinder
 Amass
 Dirsearch
 Httpx
