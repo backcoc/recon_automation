@@ -41,7 +41,7 @@ bashCopychmod +x recon.sh
 
 ## 💻 Usage
 Run the script with sudo:
-bashCopysudo ./recon.sh
+`sudo ./recon.sh`
 Input Options
 
 Single domain: example.com
