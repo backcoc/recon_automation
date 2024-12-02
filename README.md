@@ -29,15 +29,17 @@ Go (if not present)
 ## 🚀 Installation
 
 **Clone the repository:**
+```bash
 git clone https://github.com/backcoc/recon_automation.git
 cd recon_automation
 chmod +x recon.sh
+```
 
 **Make the script executable:**
 bashCopychmod +x recon.sh
 
 
-##💻 Usage
+## 💻 Usage
 Run the script with sudo:
 bashCopysudo ./recon.sh
 Input Options
