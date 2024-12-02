@@ -79,7 +79,7 @@ safe_execute() {
 install_recon_tools() {
     log_message "INFO" "Starting reconnaissance tools installation"
     
-    # Array of tools with installation commands
+    # Associative array of tools with installation commands
     declare -A TOOLS=(
         [subfinder]="go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest"
         [assetfinder]="go install github.com/tomnomnom/assetfinder@latest"
@@ -93,7 +93,7 @@ install_recon_tools() {
     fi
 
     # Install tools
-    for tool name in "${!TOOLS[@]}"; do
+    for tool in "${!TOOLS[@]}"; do
         if ! command -v "$tool" &> /dev/null; then
             safe_execute "${TOOLS[$tool]}" "WARNING" "Failed to install $tool"
             safe_execute "sudo ln -sf ~/go/bin/$tool /usr/local/bin/$tool" "IGNORE" "Failed to create symlink for $tool"
